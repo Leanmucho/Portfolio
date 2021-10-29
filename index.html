@@ -6,26 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio Leanmucho</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <div class="contenedor-icono"><a href="#inicio"><img src="icono.png" class="icono" alt="Leanmucho"></a></div>
+            <div class="contenedor-icono"><a href="#inicio"><img src="img/icono.png" class="icono" alt=""></a></div>
             <div class="contenedor-menu">
-                <a href="#inicio"><p>inicio</a>
+                <a href="#inicio">inicio</a>
                 <a href="#sobreMi">Sobre Mi</a>
                 <a href="#misTrabajos">Mis Trabajos</a>
                 <a href="#contacto">Contactame</a>
             </div>
         </header>
-        <main class="main">
-            <img src="developerImg.svg" alt="Leanmucho Developer" class="developerImg">
+        <main class="main foo">
+            <img src="img/developerImg.svg" alt=" Developer" class="developerImg">
             <div class="contenedor-textos">
-                <h1 class="titulo">Hola! Soy Leanmucho</h1><h2 class="subtitulo">y soy Frontend Developer</h2>
+                <h1 class="titulo" data-aos="fade-right">Hola! Soy Leanmucho</h1><h2 class="subtitulo" data-aos="fade-right">y soy Frontend Developer</h2>
             </div>
-            <img src="Vector1.svg" alt="Leanmucho" class="wave">
+            <img src="img/Vector1.svg" alt="" class="wave">
         </main>
+        <div class="sobre-mi" id="sobreMi">
+            <div class="texto-abajo-imagenes"><h3 class="subtitulo texto-abajo">Estas son las tecnologias que domino:</h3></div>
+            <div class="caja-imagenes bar">
+                <img src="img/html5.png" alt=" HTML5">
+                <img src="img/css3.png" alt=" CSS3">
+                <img src="img/js.png" alt=" JS">
+                <img src="img/react.png" alt=" React">
+                <img src="img/visualstudio.png" alt=" visualstudio">
+                <img src="img/github.png" alt="github">
+                <img src="img/git.png" alt="git">
+                <img src="img/figma.png" alt="figma">
+            </div>
+            <div class="texto-sobre-imagens"><h2>Soy una persona que busca estar en constante</h2></div>
+            <img src="img/Vector2.svg" alt="Vector" class="wave2">
+        </div>
+
+
+        <div class="mis-trabajos" id="misTrabajos">
+            
+        </div>
+
     </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+   AOS.init();
+</script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal(".foo");
+    sr.reveal(".bar");
+</script>
 </body>
 </html>
