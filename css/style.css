@@ -3,15 +3,19 @@
     margin: 0;
     padding: 0;
   }
-  
+  html {
+    scroll-behavior: smooth;
+  }
   body{
     font-family: sans-serif;
     background: linear-gradient(90deg, #E55D87 0%, #5FC3E4 100%);
+    scroll-behavior: smooth;
   }
   .container {
     width: 90%;
     max-width: 850px;
     margin: 0 auto;
+    scroll-behavior: smooth;
   }
  
   /*Header*/
@@ -74,17 +78,18 @@
     display: flex;
     align-items: center;
     transition: 5s;
-
+    scroll-behavior: smooth;
   }
   .wave {
     position: absolute;
     top: 0;
     right: 0;
     width: 40%;
+    z-index: -100;
   }
   .contenedor-textos{
     flex-basis: 50%;
-    padding-left: 40px;
+    padding-right: 120px;
     overflow: hidden;
     color: #fff;
   }
@@ -124,17 +129,25 @@
     margin: 0;
     z-index: 1000;
     flex-direction: column;
+    scroll-behavior: smooth;
   }
-  
+
+
+  .caja-imagenes {
+    flex-basis: 95%;
+    justify-content: center;
+    margin-left: 30px;
+  }
   .caja-imagenes img{
     background-color: #fff;
     width: 150px;
     height: 150px;
     margin: 15px;
     cursor: pointer;
+    transition: 0.3s ease-in-out ;
   }
   .caja-imagenes img:hover{
-    transition: 0.3s linear ;
+    transition: 0.3s ease-in-out ;
     width: 160px;
     height: 160px;
   }
@@ -154,4 +167,13 @@
     text-align:start;
     align-items: center;
     margin-top: 100px;
+  }
+
+
+  /*MIS TRABAJOS */
+
+  .mis-trabajos {
+    background-color: #fff;
+    height: 100vh;
+    
   }
