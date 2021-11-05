@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripción" content="Pagina Portfolio de Leanmucho. Leanmucho es un Frontend Developer"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -12,9 +13,9 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="contenedor-icono"><a href="#inicio"><img src="img/icono.png" class="icono" alt=""></a></div>
+            <div class="contenedor-icono"><a href="#inicio"><img src="img/icono.png" class="icono" alt="Leanmucho"  ></a></div>
             <div class="contenedor-menu">
-                <a href="#inicio">inicio</a>
+                <a href="#inicio">Inicio</a>
                 <a href="#sobreMi">Sobre Mi</a>
                 <a href="#misTrabajos">Mis Proyectos</a>
                 <a href="#contacto">Contactame</a>
@@ -25,11 +26,12 @@
             <div class="contenedor-textos">
                 <h1 class="titulo" data-aos="fade-right">Hola! Soy Leanmucho</h1><h2 class="subtitulo" data-aos="fade-right">y soy Frontend Developer</h2>
             </div>
-            <img src="img/Vector1.svg" alt="" class="wave">
         </main>
         <div class="sobre-mi" id="sobreMi">
-            <div class="texto-abajo-imagenes"><h3 class="subtitulo texto-abajo">Estas son las tecnologias que domino:</h3></div>
-            <div class="caja-imagenes bar">
+            <div class="texto-sobre-imagenes"><h2 class="mi-1">Soy una persona que busca superarse constantemente, me encantan los retos dificiles y todo el tiempo estoy buscando salir de mi zona de confort</h2>
+            <h3 class="mi-2">Estas son algunas de las tecnologias que domino: </h3>
+            </div>
+            <div class="caja-imagenes bar" data-aos="fade-left">
                 <img src="img/html5.png" alt=" HTML5">
                 <img src="img/css3.png" alt=" CSS3">
                 <img src="img/js.png" alt=" JS">
@@ -39,12 +41,11 @@
                 <img src="img/git.png" alt="git">
                 <img src="img/figma.png" alt="figma">
             </div>
-            <div class="texto-sobre-imagens"><h2>Soy una persona que busca estar en constante</h2></div>
-            <img src="img/Vector2.svg" alt="Vector" class="wave2">
         </div>
 
 
         <div class="mis-trabajos" id="misTrabajos">
+            <h2>---------- Some of my latest work ----------</h2>
             <div class="caja-trabajos">
                 <div class="imagen-trabajo"><img src=""></div>
                 <div class="texto-trabajo"><h3></h3></div>
@@ -52,7 +53,33 @@
 
         </div>
 
-    </div>
+        <div class="contacto" id="contactoId">
+            
+                <div class="texto-contacto"><h2 class="titulo-contacto">Contacto</h2> <p class="subtitulo-contacto">Hablas Español? It's ok if you don't, I speak English too.</p></div>
+                <ul class="redes-sociales" data-aos="fade-right">
+                    <li><a href="https://instagram/user/Leanmucho" class="ig" tarjet="blank"><img src="img/instagram.png" alt="instagram"> Instagram</a> </li>
+                    <li><a href="" class="linkedin" target="blank" ><img src="img/linkedin.png" alt="linkedin">Linkedin</a></li>
+                    <li><a href="" class="facebook" tarjet="blank"><img src="img/facebook.png" alt="facebook">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="email-contacto">
+                <h3>Send me an email</h3>
+                    <form method="post" id="form" class="formulario">
+                        <input type="text" placeholder="Name" name="name" class="nameContacto" required>
+                        <input type="email" placeholder="Email addres" name="email" class="emailContacto" required>
+                        <textarea name="msg" id="" cols="30" rows="10" class="msgContacto" placeholder="Message"></textarea>
+                        <button type="submit" class="buttonContacto">Enviar Mensaej</button>
+                    </form>
+
+                <a href="mailto:acunaleandro3@gmail.com" id="mail">mail</a>
+            </div>
+
+
+        </div>
+        <footer class="footer">
+            <div class="copyright">©Leanmucho</div>
+            <div class="seccion-menu-footer"></div>
+        </footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
@@ -64,5 +91,6 @@
     sr.reveal(".foo");
     sr.reveal(".bar");
 </script>
+<script src="js/app.js"></script>
 </body>
 </html>
