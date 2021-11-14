@@ -14,12 +14,24 @@
     <div class="container">
         <header class="header">
             <div class="contenedor-icono"><a href="#inicio"><img src="img/icono.png" class="icono" alt="Leanmucho"  ></a></div>
-            <div class="contenedor-menu">
-                <a href="#inicio">Inicio</a>
-                <a href="#sobreMi">Sobre Mi</a>
-                <a href="#misTrabajos">Mis Proyectos</a>
-                <a href="#contacto">Contactame</a>
+                
+            <div class="icono-menu">
+                <img src="img/open'menu.png" id="icono-menu">
             </div>
+            <div class="cont-menu active" id="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>Abaout </li>
+                </ul>
+            </div>
+            
+            <div class="contenedor-menu">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobreMi">Sobre Mi</a>
+                    <a href="#misTrabajos">Mis Proyectos</a>
+                    <a href="#contacto">Contactame</a>
+                </div>
         </header>
         <main class="main foo" id="inicio">
             <img src="img/developerImg.svg" alt=" Developer" class="developerImg">
@@ -45,9 +57,9 @@
 
 
         <div class="mis-trabajos" id="misTrabajos">
-            <h2>---------- Some of my latest work ----------</h2>
+                <hr class="hr-work"> <h2 class="titulo-work"> Some of my latest work </h2> <hr class="hr-work">
             <div class="caja-trabajos">
-                <div class="imagen-trabajo"><img src=""></div>
+                <div class="imagen-trabajo"><a href="https://leanmucho.github.io/Garabato-Artesanal/"><img src="img/developerImg.svg"></a></div>
                 <div class="texto-trabajo"><h3></h3></div>
             </div>
 
@@ -64,10 +76,10 @@
             </div>
             <div class="email-contacto">
                 <h3>Send me an email</h3>
-                    <form method="post" id="form" class="formulario">
+                <form method="post" id="form" class="formulario">
                         <input type="text" placeholder="Name" name="name" class="nameContacto" required>
-                        <input type="email" placeholder="Email addres" name="email" class="emailContacto" required>
                         <textarea name="msg" id="" cols="30" rows="10" class="msgContacto" placeholder="Message"></textarea>
+                        <input type="email" placeholder="Email addres" name="email" class="emailContacto" required>
                         <button type="submit" class="buttonContacto">Enviar Mensaej</button>
                     </form>
 
@@ -77,8 +89,7 @@
 
         </div>
         <footer class="footer">
-            <div class="copyright">©Leanmucho</div>
-            <div class="seccion-menu-footer"></div>
+            <div class="copyright">2021 ©Leandro Acuña</div>
         </footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
