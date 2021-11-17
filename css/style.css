@@ -269,12 +269,14 @@
 
   }
   .redes-sociales li a {
+    display: flex;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
     align-items: center;
   }
   .redes-sociales img{
+    margin: 0 15px 5px 0;
     max-width: 200px;
     max-height: 50px;
   }
@@ -312,6 +314,28 @@
     border: 0.1px solid #6d6d6d;
     border-radius: 5px;
     vertical-align: middle;
+  }
+  .formulario textarea {
+    border: 0.1px solid #6d6d6d;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 85px;
+    max-height: 250px;
+    width: 450px;
+    padding: 15px;
+  }
+  .buttonContacto{
+    margin: 30px 0 0 0;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border: none;
+    position: relative;
+    transition: 1s;
+  }
+  .buttonContacto:hover{
+    background: #3cf;
+    cursor: pointer;
   }
   /*Footer*/
   .footer{
