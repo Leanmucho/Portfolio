@@ -80,6 +80,7 @@
   @media (max-width: 768px){
     .icono-menu{
       display: flex !important;
+      
     }
     .contenedor-menu {
       visibility: hidden;
@@ -87,7 +88,7 @@
   }
   .icono-menu{
     margin: 40px 50px;
-    position: relative;
+    position: fixed;
     left: 560px;
     z-index: 10;
     width: 1px;
@@ -104,10 +105,10 @@
     margin-right: 40em;
   }
   .cont-menu{
-    background-color: #757575;
-    box-shadow: 2px 0 5px 2px rgb(66,66,66);
-    width: 400px;
-    height: 30vh;
+    background-color: #000000;
+    box-shadow: 3px 0 5px 3px rgb(105, 105, 105);
+    width: max-content;
+    height: max-content;
     position: absolute;
     top: 0;
     right: 0;
@@ -150,7 +151,8 @@
     scroll-behavior: smooth;
   }
   .contenedor-textos{
-    flex-basis: 50%;
+    flex-basis: 60%;
+    
     padding-right: 120px;
     overflow: hidden;
     color: #fff;
@@ -166,8 +168,9 @@
     color: #757575;
   }
   .developerImg{
-    width: 80%;
+    width: 50%;
     animation: developerAnimate ease-in 1s infinite alternate;
+    margin-right: 20px;
   }
   
   @keyframes developerAnimate{
@@ -288,6 +291,7 @@
   .email-contacto{
     display: grid;
     grid-template-columns: 1fr;
+    padding-bottom: 100px;
   }
   .email-contacto h3{
     color: #333333;
@@ -340,7 +344,7 @@
   /*Footer*/
   .footer{
     background: #7575752a;
-    height: 10vh;
+    height: 20vh;
     width: 100%;
     position: relative;;
     bottom: 0;
@@ -349,7 +353,10 @@
     display: flex;
   }
   .copyright {
-    margin: 10px 45%;
+    display: flex;
+    
+    width: 100%;
+    align-items: center;
     justify-content: center;
   }
 
@@ -358,27 +365,74 @@
   @media only screen and (max-width: 700px){
     html{
       overflow-x: hidden;
+      max-width: 100vh;
+      width: 90%;
     }
     body{
-      max-width: 700px !important;
       overflow-x: hidden;
     }
+    /*header*/
     .header{
-      max-width: 700px;
-      width: 100%;
+      display: flex;
+      background-color: #440021;
+      justify-content: center;
+      position: fixed;
     }
+    .icono-menu {
+      position: absolute;
+      margin-right: 400px;
+    }
+    .icono-menu img{
+      background-color: #3cf;
+      margin-right: 100px;
+      position: fixed;
+      justify-content: center;
+      margin-right: 400px;
+    }
+    .icono img{
+      justify-content: center;
+    }
+    /*Menu*/
     .main {
       display: flex;
-      width: 100%;
-      max-width: inherit;
     }
-    .titulo{
-      font-size: 1.8em;
+    .main img{
+      align-items: flex-start;
     }
+    .titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+  /*sobre mi */
+  .caja-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
+    
+  }
+  .caja-imagenes img {
+    width: 5.5em;
+    height: 5.5em;
+    margin-bottom: 0;
   }
 
-  /* movil responsive */
+  .mi-1{
 
+    height: 20px;
+  }
+  .mi-2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  /*Trabajos*/
+
+  /*Contacto*/
+
+  /* movil responsive */
+  }
   @media (max-width: 480px){
     .header{
       max-width: 480px;
