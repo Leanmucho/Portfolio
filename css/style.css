@@ -8,7 +8,7 @@
     overflow-x: hidden;
   }
   body{
-    font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;   
+    font-family: 'Spartan', sans-serif; 
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
   }
@@ -61,16 +61,17 @@
   }
   .contenedor-menu a{
     margin: 0 20px 0 20px;
-    transition: all 0.4s linear;
     padding-right: 10px;
     border-radius: 5px;
     color: #fff;
+    padding: 5px;
   }
   .contenedor-menu a:hover{
+    transition: all 0.4s linear;
     background-color: #fff;
-    padding: 10px;
+    transform: scale(1.2);
     border: #000000;
-    color: #5FC3E4;
+    color: #000000;
   }
 
   /*Header listo*/
@@ -207,16 +208,20 @@
   }
   .texto-sobre-imagenes {
     color: #333333;
-    align-items: flex-start;
+    align-items: center;
   }
   .mi-1{
+    display: flex;
+    justify-content: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   .mi-2 {
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    height: 80px;
+    font-size: 21px;
   }
   
   /*MIS TRABAJOS */
@@ -437,13 +442,77 @@
     .header{
       max-width: 480px;
       width: 100%;
+      display: grid;
+      grid-template-rows: 1fr;
+      justify-items: center;
+    }
+    .contenedor-icono{
+      margin: 0;
+      padding: 0;
+    }
+    #icono-menu{
+      color: #fff;
+      background-color: #fff;
     }
 
+
+    /*Main*/
+    .main {
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      
+    }
+    .developerImg {
+      padding: 0;
+      margin-left: 50px;
+      padding-top: 60px;
+      width: 300px;
+      height: auto;
+    }
+    .contenedor-textos{
+      margin-left: 60px;
+      padding: 0;
+    }
+    /*sobre mi*/
+    .mi-1{
+      padding-bottom: 100px;
+    }
+    .sobre-mi{
+      margin-left: 20px;
+    }
     .caja-imagenes {
       grid-template-columns: repeat(2, 1fr);
     }
     .caja-imagenes img{
-      width: 4em;
-      height: 4em;
+      width: 5em;
+      height: 5em;
+    }
+    /*Contacto*/
+    .contacto{
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr 1fr;  
+    }
+    .email-contacto{
+      row-gap: 50px;
+    }
+    .email-contacto h3{
+      margin-top: 70px;
+    }
+    .formulario {
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr 1fr 1fr; 
+      gap: 15px 16px; 
+    }
+    .formulario input {
+      max-width: 345px;
+    }
+    .msgContacto{
+     max-width: 345px; 
+    }
+    .redes-sociales{
+      margin-top: 0;
     }
   }
