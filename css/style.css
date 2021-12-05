@@ -78,15 +78,7 @@
 
   /* menu hamburguesa */
 
-  @media (max-width: 768px){
-    .icono-menu{
-      display: flex !important;
-      
-    }
-    .contenedor-menu {
-      visibility: hidden;
-    }
-  }
+
   .icono-menu{
     margin: 40px 50px;
     position: fixed;
@@ -145,7 +137,7 @@
   .main {
     margin-top: 2px;
     width: 90%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     transition: 5s;
@@ -367,7 +359,7 @@
 
   /* Tablet responsiive */
 
-  @media only screen and (max-width: 700px){
+  @media (max-width: 700px){
     html{
       overflow-x: hidden;
       max-width: 100vh;
@@ -379,7 +371,6 @@
     /*header*/
     .header{
       display: flex;
-      background-color: #440021;
       justify-content: center;
       position: fixed;
     }
@@ -390,12 +381,18 @@
     .icono-menu img{
       background-color: #3cf;
       margin-right: 100px;
-      position: fixed;
-      justify-content: center;
-      margin-right: 400px;
+      display: inline-flex;
     }
-    .icono img{
-      justify-content: center;
+    .icono-menu img{
+      position: absolute;
+      left: 0;
+    }
+    .icono-menu{
+      display: flex !important;
+      
+    }
+    .contenedor-menu {
+      visibility: hidden;
     }
     /*Menu*/
     .main {
@@ -403,6 +400,11 @@
     }
     .main img{
       align-items: flex-start;
+    }
+    .contenedor-textos{
+      padding: 0;
+      margin: 0;
+      font-size: 10px;
     }
     .titulo {
       display: flex;
@@ -424,7 +426,6 @@
   }
 
   .mi-1{
-
     height: 20px;
   }
   .mi-2{
@@ -440,15 +441,15 @@
   }
   @media (max-width: 480px){
     .header{
-      max-width: 480px;
-      width: 100%;
-      display: grid;
-      grid-template-rows: 1fr;
-      justify-items: center;
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 20px 0px; 
+
     }
     .contenedor-icono{
       margin: 0;
       padding: 0;
+      margin-right: 50px;
     }
     #icono-menu{
       color: #fff;
@@ -498,7 +499,7 @@
       row-gap: 50px;
     }
     .email-contacto h3{
-      margin-top: 70px;
+      margin-top: 150px;
     }
     .formulario {
       display: grid; 
