@@ -24,7 +24,6 @@
   .header{
     background: #000000;
     display: flex;
-    justify-content: space-around;
     height: 80px;
     padding: 0;
     position: fixed;
@@ -51,6 +50,7 @@
     transform: scale(2);
   }
   .contenedor-menu {
+    margin-left: 300px;
     display: flex;
     justify-content: flex-end;
     right: 40px;
@@ -133,7 +133,7 @@
 
   /*main*/
   .main {
-    margin-top: 2px;
+    margin-top: 70px;
     width: 90%;
     height: 90vh;
     display: flex;
@@ -358,8 +358,7 @@
     display: flex;
   }
   .copyright {
-    display: flex;
-    
+    display: flex; 
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -367,37 +366,24 @@
 
   /* Tablet responsiive */
 
-  @media (max-width: 700px){
+  @media (max-width: 800px){
     html{
       overflow-x: hidden;
-      max-width: 100vh;
-      width: 90%;
+      width: 100%;
     }
     body{
       overflow-x: hidden;
     }
     /*header*/
+
     .header{
       display: flex;
       justify-content: center;
-      position: fixed;
     }
     .icono-menu {
-      position: absolute;
-      margin-right: 400px;
-    }
-    .icono-menu img{
-      background-color: #3cf;
-      margin-right: 100px;
-      display: inline-flex;
-    }
-    .icono-menu img{
-      position: absolute;
-      left: 0;
-    }
-    .icono-menu{
-      display: flex !important;
-      
+      display: flex;
+      color: #fff;
+      font-size: 20px;
     }
     .contenedor-menu {
       visibility: hidden;
@@ -410,6 +396,7 @@
       align-items: flex-start;
     }
     .contenedor-textos{
+
       padding: 0;
       margin: 0;
       font-size: 10px;
@@ -442,9 +429,19 @@
   }
 
   /*Trabajos*/
+  .mis-trabajos {
+    margin-top: 25vh;
+  }
+  .grid-trabajos {
+    display: grid; 
 
+    grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr;
+  }
   /*Contacto*/
-
+.contacto {
+  margin-top: 25vh;
+}
   /* movil responsive */
   }
   @media (max-width: 480px){
@@ -453,12 +450,18 @@
       padding: 0;
       margin-right: 50px;
     }
-    #icono-menu{
-      color: #fff;
-      background-color: #fff;
+    .header {
+      display: flex;
+      justify-content: center;
+      width: auto;
     }
-    
-    
+    .icono-menu img {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      z-index: 100000;
+      margin-right: 400px;
+    }
     /*Main*/
     .main {
       display: grid; 
@@ -501,6 +504,7 @@
     /* Mis Trabajos*/
     .mis-trabajos {
       padding-top: 100vh;
+      padding-bottom: 25vh;
     }
     .hr-work {
       padding: 0;
@@ -512,6 +516,22 @@
       margin: 0;
       display: flex;
       width: fit-content;
+    }
+    .caja-trabajos {
+      max-width: 359px;
+    }
+    .imagen-trabajo img{
+      width: 350px;
+      height: 150px;
+    }
+    .grid-trabajos {
+      display: grid; 
+
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      
+      gap: 20px;
+      height: 100%;
     }
     /*Contacto*/
     .texto-contacto {
