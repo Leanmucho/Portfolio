@@ -40,14 +40,12 @@
     color: #fff;
     text-decoration: none;
   }
-  .contenedor-icono {
-    width: 50px;
+  .contenedor-icono .icono {
     padding-left: 20px;
-  }
-  .icono {
     transition: all 0.4s linear;
-    width: 50px;
+    width: 75px;
     margin-left: 40px;
+    display: flex;
   }
   .icono:hover{
     transform: scale(2);
@@ -239,6 +237,16 @@
   }
   .caja-trabajos{
     display: grid;
+  }
+  .grid-trabajos {
+      display: grid; 
+   
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      
+      gap: 40px;
+      height: 100%;
+      width: 90%;
   }
   /*Contacto*/
 
@@ -440,12 +448,6 @@
   /* movil responsive */
   }
   @media (max-width: 480px){
-    .header{
-      display: grid; 
-      grid-template-columns: 1fr 1fr; 
-      gap: 20px 0px; 
-
-    }
     .contenedor-icono{
       margin: 0;
       padding: 0;
@@ -455,14 +457,17 @@
       color: #fff;
       background-color: #fff;
     }
-
-
+    
+    
     /*Main*/
     .main {
       display: grid; 
       grid-template-columns: 1fr; 
       grid-template-rows: 1fr 1fr; 
       
+    }
+    .contenedor-textos {
+      margin-top: 150px;
     }
     .developerImg {
       padding: 0;
@@ -476,7 +481,11 @@
       padding: 0;
     }
     /*sobre mi*/
+    .sobre-mi {
+      padding-top: 200px;
+    }
     .mi-1{
+      padding-top: 100px;
       padding-bottom: 100px;
     }
     .sobre-mi{
@@ -489,17 +498,42 @@
       width: 5em;
       height: 5em;
     }
+    /* Mis Trabajos*/
+    .mis-trabajos {
+      padding-top: 100vh;
+    }
+    .hr-work {
+      padding: 0;
+      margin: 0;
+      width: 30px;
+    }
+    .titulo-work {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      width: fit-content;
+    }
     /*Contacto*/
+    .texto-contacto {
+      margin: 0 0 30px 0;
+      padding: 0;
+      height: auto;
+    }
+    .titulo-contacto {
+      font-size: 50px;
+    }
     .contacto{
+      padding-top: 100vh;
       display: grid; 
       grid-template-columns: 1fr; 
       grid-template-rows: 1fr 1fr 1fr;  
     }
     .email-contacto{
       row-gap: 50px;
+      padding-top: 200px;
     }
     .email-contacto h3{
-      margin-top: 150px;
+      margin-top: 250px;
     }
     .formulario {
       display: grid; 
@@ -513,7 +547,5 @@
     .msgContacto{
      max-width: 345px; 
     }
-    .redes-sociales{
-      margin-top: 0;
-    }
+    
   }
