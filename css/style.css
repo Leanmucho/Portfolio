@@ -31,7 +31,7 @@
     line-height: 1.4em;
     background: #333;
     color: #fff;
-    padding: 2rem 0;
+    padding: 1.3rem 0;
     z-index: 1000;
 
     position: fixed;
@@ -49,9 +49,13 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.logoHea{
+/* .logoHea{
     letter-spacing: 15px;
     font-size: 1.2em;
+} */
+.logoHea img {
+  width: 3em;
+  height: auto;
 }
 .menu-icon {
     display: none;
