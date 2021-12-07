@@ -16,26 +16,18 @@
 <body>
     <div class="container">
         <header class="header">
-                <div class="contenedor-icono"><a href="#inicio"><img src="img/icono.png" class="icono" alt="Leanmucho"  ></a></div>
-                <div class="icono-menu">
-                    <h1 id="icono-menu">☰</h1>
-                </div>
-                <div class="cont-menu active" id="menu">
+            <div class="containerHeader logo-nav">
+                <a href="#" class="logoHea" data-aos="fade-right">LOGO</a>
+                <span class="menu-icon">☰</span>
+                <nav class="navigation">
                     <ul>
-                        <li> <a href="#inicio">Inicio</a> </li>
-                        <li><a href="#sobreMi">Sobre Mi</a></li>
-                        <li><a href="#misTrabajos">Mis Trabajos</a></li>
-                        <li><a href="#contacto">Contactame</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre Mi</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Mis trabajos</a></li>
                     </ul>
-                </div>
-                
-                <div class="contenedor-menu">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#sobreMi">Sobre Mi</a>
-                    <a href="#misTrabajos">Mis Proyectos</a>
-                    <a href="#contacto">Contactame</a>
-                </div>
-
+                </nav>
+            </div>
         </header>
         <main class="main" id="inicio">
             <img src="img/yo.png" alt=" Developer" class="developerImg">
@@ -108,8 +100,9 @@
         <footer class="footer">
             <div class="copyright">2021 ©Leandro Acuña</div>
         </footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
    AOS.init();
 </script>
@@ -120,5 +113,6 @@
     sr.reveal(".bar");
 </script>
 <script src="js/app.js"></script>
+
 </body>
 </html>
