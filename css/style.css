@@ -160,28 +160,23 @@
     font-size: 21px;
   }
   
+  
   /*MIS TRABAJOS */
 
   .mis-trabajos {
-    background-color: #fff;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
     margin-top: 5vh;
+    margin-bottom: 15vh;
   }
   .titulo-work{
-    font-weight: 50;
     font-size: 20px;
-    color: #757575;
+    color: #333333;
     width: 30%;
     margin-left: 80px;
     margin: 25px;
     height: 20px;
-  }
-  .hr-work {
-    border: 0.5px solid rgba(189, 189, 189, 0.514);
-    width: 25%;
-    height: 1px;
   }
   .caja-trabajos{
     display: grid;
@@ -195,6 +190,9 @@
       gap: 40px;
       height: 100%;
       width: 90%;
+  }
+  .texto-trabajo{
+    color: #757575;
   }
   /*Contacto*/
 
@@ -391,17 +389,20 @@
   /*Trabajos*/
   .mis-trabajos {
     margin-top: 25vh;
+    height: 230vh;
   }
   .grid-trabajos {
+    margin-top: 25px;
     display: grid; 
-
+    
     grid-template-rows: 1fr 1fr;
-grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
   .titulo-work {
     width: 100%;
-    margin-bottom: 40px;
-    padding-bottom: 40px;
+    display: block;
+    margin: 25px;
   }
   /*Contacto*/
 .contacto {
@@ -479,7 +480,6 @@ grid-template-columns: 1fr;
     /* Mis Trabajos*/
     .mis-trabajos {
       padding-top: 50vh;
-      padding-bottom: 25vh;
     }
     .hr-work {
       margin: 10px 10px;
@@ -517,7 +517,7 @@ grid-template-columns: 1fr;
       font-size: 50px;
     }
     .contacto{
-      padding-top: 50vh;
+      padding-top: 10vh;
       display: grid; 
       grid-template-columns: 1fr; 
       grid-template-rows: 1fr 1fr 1fr;  
@@ -527,7 +527,7 @@ grid-template-columns: 1fr;
       padding-top: 200px;
     }
     .email-contacto h3{
-      margin-top: 250px;
+      margin-top: 30px;
     }
     .formulario {
       display: grid; 
@@ -536,6 +536,15 @@ grid-template-columns: 1fr;
       gap: 15px 16px; 
     }
     .formulario input {
+      width: 345px;
+      max-width: 345px;
+    }
+    .formulario textarea{
+      width: 345px;
+      max-width: 345px;
+    }
+    .formulario button{
+      width: 345px;
       max-width: 345px;
     }
     .msgContacto{
