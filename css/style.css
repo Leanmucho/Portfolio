@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    
+         
     padding: 0;
   }
   html {
@@ -452,8 +452,8 @@
     .main {
       display: grid; 
       grid-template-columns: 1fr; 
-      grid-template-rows: 1fr 1fr; 
-      
+      grid-template-rows: 0.7fr 1.3fr; 
+      gap: 10px 10px;
     }
     .contenedor-textos {
       margin-top: 150px;
@@ -461,7 +461,7 @@
     .developerImg {
       padding: 0;
       margin-left: 50px;
-      padding-top: 60px;
+      margin-top: 60px;
       width: 300px;
       height: auto;
     }
@@ -471,10 +471,10 @@
     }
     /*sobre mi*/
     .sobre-mi {
-      padding-top: 200px;
+      padding-top: 50px;
     }
     .mi-1{
-      padding-top: 100px;
+      padding-top: 50px;
       padding-bottom: 100px;
     }
     .sobre-mi{
@@ -484,12 +484,12 @@
       grid-template-columns: repeat(2, 1fr);
     }
     .caja-imagenes img{
-      width: 5em;
-      height: 5em;
+      width: 6em;
+      height: 6em;
     }
     /* Mis Trabajos*/
     .mis-trabajos {
-      padding-top: 50vh;
+      padding-top: 20vh;
     }
     .hr-work {
       margin: 10px 10px;
@@ -516,6 +516,7 @@
     }
     .caja-trabajos {
       display: block;
+      height: auto;
     }
     .imagen-trabajo img{
         width: 100%;
@@ -533,6 +534,7 @@
       font-size: 50px;
     }
     .contacto{
+      margin-top: 0;
       padding-top: 0px;
       display: grid; 
       grid-template-columns: 1fr; 
