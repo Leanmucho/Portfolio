@@ -182,6 +182,9 @@
   .caja-trabajos{
     display: grid;
   }
+  .caja-trabajos img{
+    border-radius: 5px;
+  }
   .grid-trabajos {
       display: grid; 
       grid-template-columns: 1fr 1fr; 
@@ -276,12 +279,14 @@
     margin-top: 10px;
     height: 85px;
     max-height: 250px;
-    width: 450px;
+    width: 90%;
     padding: 15px;
   }
   .buttonContacto{
     margin: 30px 0 0 0;
     height: 40px;
+    border-radius: 5px;
+    width: 90%;
     background: #000;
     color: #fff;
     border: none;
@@ -490,11 +495,9 @@
     /* Mis Trabajos*/
     .mis-trabajos {
       padding-top: 20vh;
+      height: fit-content;
     }
-    .hr-work {
-      margin: 10px 10px;
-      width: 90%;
-    }
+
     .titulo-work {
       padding: 0;
       margin: 0;
@@ -507,7 +510,7 @@
       grid-template-columns: 1fr; 
       grid-template-rows: 1fr 1fr 1fr 1fr; 
       gap: 0px 0px; 
-      height: 100%;
+      height: 900px;
       width: 90%;
     }
     .imagen-trabajo {
@@ -516,7 +519,7 @@
     }
     .caja-trabajos {
       display: block;
-      height: auto;
+      height: 40px;
     }
     .imagen-trabajo img{
         width: 100%;
