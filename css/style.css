@@ -168,8 +168,8 @@
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5vh;
-    margin-bottom: 15vh;
+    margin-top: 25vh;
+    margin-bottom: 30vh;
   }
   .titulo-work{
     font-size: 20px;
@@ -314,6 +314,10 @@
     align-items: center;
     justify-content: center;
   }
+  .copyright p {
+    margin: 2vh;
+    display: flex;
+  }
 
   /* Tablet responsiive */
 
@@ -367,6 +371,10 @@
       align-items: center;
       justify-content: center;
       font-size: 30px;
+    }
+
+    .mi-2 {
+      padding-top: 10rem;
     }
   
   /*sobre mi */
@@ -436,10 +444,19 @@
 }
 /* movil responsive */
   @media (max-width: 480px){
+    .container{
+      margin: auto;
+    }
+    .texto-sobre-imagenes {
+      margin-bottom: 20vh;
+    }
     .contenedor-icono{
       margin: 0;
       padding: 0;
       margin-right: 50px;
+    }
+    .mi-2{
+      margin-top: 35vh;
     }
     .header {
       display: flex;
@@ -500,7 +517,7 @@
 
     .titulo-work {
       padding: 0;
-      margin: 0;
+      margin-top: 25vh;
       display: flex;
       width: fit-content;
     }
